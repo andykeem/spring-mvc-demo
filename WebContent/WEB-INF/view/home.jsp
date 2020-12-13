@@ -8,6 +8,11 @@
 </head>
 <body>
 	<h4>Homepage</h4>
-	<a href="student/show-form">Student Form</a>
+	<p>
+		<a href="student/show-form">Student Registration Form</a>
+	</p>
+	<p>
+		<a href="customer/show-form">Customer Registration Form</a>
+	</p>
 </body>
 </html>

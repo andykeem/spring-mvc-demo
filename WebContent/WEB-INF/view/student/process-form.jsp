@@ -27,5 +27,6 @@
 			<span>${item}</span><br />
 		</c:forEach>
 	</p>
+	<p>Course code: ${student.courseCode}</p>
 </body>
 </html>

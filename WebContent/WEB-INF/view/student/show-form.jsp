@@ -40,6 +40,10 @@
 			</div>
 		</p>
 		<p>
+			Course code: <form:input path="courseCode" />
+			<div><form:errors path="courseCode" cssClass="error" /></div>
+		</p>
+		<p>
 			<input type="submit" />
 		</p>
 	</form:form>

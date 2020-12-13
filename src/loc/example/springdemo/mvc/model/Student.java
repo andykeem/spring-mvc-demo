@@ -7,6 +7,8 @@ import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
+import loc.example.springdemo.mvc.validation.CourseCode;
+
 public class Student {
 
 	private String firstName;
@@ -16,6 +18,9 @@ public class Student {
 	private String country;
 	private String language;
 	private List<String> operSystems;
+	
+	@CourseCode(prefix = "STU-", message = "hey, you must start with STU-")
+	private String courseCode;
 	
 	public Student() {
 		language = "";
@@ -61,9 +66,17 @@ public class Student {
 		this.operSystems = operSystems;
 	}
 
+	public String getCourseCode() {
+		return courseCode;
+	}
+
+	public void setCourseCode(String courseCode) {
+		this.courseCode = courseCode;
+	}
+
 	@Override
 	public String toString() {
 		return "Student [firstName=" + firstName + ", lastName=" + lastName + ", country=" + country + ", language="
-				+ language + ", operSystems=" + operSystems + "]";
+				+ language + ", operSystems=" + operSystems + ", courseCode=" + courseCode + "]";
 	}
 }
